@@ -1,5 +1,33 @@
 # GCalender_manager
 
+
+## Tech Stack
+
+Below is an Tech stack used in this project as follows:
+
+- **React**: Library for building user interfaces
+- **Vite**: Fast development build tool
+- **Context API**: For global state management in application
+- **Supabase**: Backend-as-a-service for authentication and database
+- **Material-UI**: UI components library
+- **React Toastify**: Notifications and alerts
+- **Google Calendar API**: For creating and managing calendar events
+- **Google OAuth**: For user authentication
+- **Axios**: For making HTTP requests
+
+## Features
+
+- **Date Filter**: Filter events based on selected date ranges.
+- **Search Bar**: Search for specific events.
+- **Add Events to Google Calendar**: Seamlessly integrate events into your Google Calendar.
+- **Dark/Light Mode**: Toggle between dark and light themes for better user experience.
+- **Responsive Design**: Optimized for various screen sizes.
+
+## Cloud Deployment
+
+Deploy the application to cloud environment :
+- **Netlify**
+
 # React Vite Project
 
 This is a React project bootstrapped with [Vite](https://vitejs.dev/). Follow the instructions below to set up the project locally.
