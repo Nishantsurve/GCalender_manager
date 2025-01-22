@@ -1,0 +1,171 @@
+/* General styling for the App container */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  
+}
+
+.App {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100vh;
+  height: 100%;
+  max-width: 1200px;
+  
+  text-align: center;
+}
+
+/* Center container styling */
+
+.singout-ct{
+  display: flex;
+  justify-content: space-between;
+
+}
+/* Header container */
+/* Sign Out Button in Top-Right Corner */
+.signout-button {
+  position: absolute;
+  top: 10px;
+  align-items: right;
+  background-color: #6c757d;
+  color: white;
+  width: 120px;
+  right: 840px;
+  margin-top: -30px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signout-button:hover {
+  background-color: #5a6268;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header container styling */
+.header-container {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+
+/* Heading */
+h2 {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Labels and Instructions */
+p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Secondary button (e.g., sign out) */
+button:last-of-type {
+  background-color: #6c757d;
+}
+
+button:last-of-type:hover {
+  background-color: #5a6268;
+}
+
+/* Divider */
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Alerts and Messages */
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 500px) {
+  .App > div {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

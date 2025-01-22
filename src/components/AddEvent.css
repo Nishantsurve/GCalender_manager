@@ -1,0 +1,126 @@
+/* AddEvent.css */
+
+/* Main Event container */
+.Event {
+  width: 400px; /* Limit the width for better readability */
+  margin: 50px auto; /* Center the container vertically and horizontally */
+  padding: 20px;
+  background-color: #ffffff; /* Default background color for light mode */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transitions */
+}
+
+/* Header styling */
+.header-container h2 {
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333333; /* Default text color for light mode */
+}
+
+.icon-container{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Input fields */
+input[type='text'],
+input[type='datetime-local'] {
+  width: 100%; /* Full width for better UX */
+  padding: 12px;
+  margin: 10px 0 20px; /* Space between inputs */
+  border: 1px solid #cccccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect for inputs */
+input[type='text']:focus,
+input[type='datetime-local']:focus {
+  outline: none;
+  border-color: #4285f4; /* Highlight border on focus */
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285f4; /* Google blue color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #357ae8; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Signout button (aligned to the top-right) */
+.signout-button {
+  background-color: #dc3545; /* Red color for signout */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  padding: 8px 16px;
+}
+
+.signout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Icon container for theme toggle */
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* For Dark Mode */
+body.dark-mode .Event {
+  background-color: #1c1c1c; /* Dark background */
+  color: #ffffff; /* White text for dark mode */
+}
+
+body.dark-mode .header-container h2 {
+  color: #ffffff;
+}
+
+body.dark-mode input[type='text'],
+body.dark-mode input[type='datetime-local'] {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+body.dark-mode input[type='text']:focus,
+body.dark-mode input[type='datetime-local']:focus {
+  border-color: #90caf9; /* Light blue focus border */
+}
+
+body.dark-mode button {
+  background-color: #90caf9;
+}
+
+body.dark-mode button:hover {
+  background-color: #64b5f6;
+}
+
+body.dark-mode .signout-button {
+  background-color: #f44336;
+}
+
+body.dark-mode .signout-button:hover {
+  background-color: #d32f2f;
+}
