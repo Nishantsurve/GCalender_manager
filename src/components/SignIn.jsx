@@ -23,7 +23,7 @@ const SignIn = () => {
   return (
     <div>
         <div className="signin">
-          <button onClick={() => googleSignIn()}>Sign In With Google</button>
+          <button onClick={() => googleSignIn()}>SignIn With Google</button>
         </div>
     </div>
   )
