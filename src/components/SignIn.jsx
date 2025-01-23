@@ -11,7 +11,6 @@ const SignIn = () => {
         const { error } = await supabase.auth.signInWithOAuth({
           provider: 'google',
           options: {
-            redirectTo: 'https://nishantsurve-whitecarrrot.netlify.app/callback', // Your Netlify app URL
             scopes: 'https://www.googleapis.com/auth/calendar ',
           },
         });
